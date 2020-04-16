@@ -7,4 +7,11 @@
     android:background="#153c27"
     tools:context=".Main4Activity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="288dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
