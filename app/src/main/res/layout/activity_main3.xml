@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:background="#153c27">
+
+    <TextView
+        android:id="@+id/nom2"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/baloo"
+        android:text="Proveedor:"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nom3" />
+
+    <EditText
+        android:id="@+id/tipMat"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="#3CB371"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Inserte el Proveedor"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nom2"
+        app:layout_constraintTop_toBottomOf="@+id/PreMat" />
+
+    <TextView
+        android:id="@+id/Nom2"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/baloo"
+        android:text="Tipo del Material:"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nom1" />
+
+    <EditText
+        android:id="@+id/TipMat"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="#3CB371"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Inserte el Tipo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Nom1"
+        app:layout_constraintTop_toBottomOf="@+id/NomMat" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icv" />
+
+    <TextView
+        android:id="@+id/Tutulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginRight="212dp"
+        android:fontFamily="@font/baloo"
+        android:text="Nuevo Material."
+        android:textColor="#58F89F"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Nom1"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/baloo"
+        android:text="Nombre del Material:"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tutulo" />
+
+    <EditText
+        android:id="@+id/NomMat"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="115dp"
+        android:background="#3CB371"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Inserte el Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Nom1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/Nom3"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/baloo"
+        android:text="Precio del Material:"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nom2" />
+
+    <EditText
+        android:id="@+id/PreMat"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="#3CB371"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Inserte el Precio"
+        android:inputType="number"
+        android:textColor="#FDFCFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Nom3"
+        app:layout_constraintTop_toBottomOf="@+id/TipMat" />
+
+    <Button
+        android:id="@+id/BotonGuardar"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="#58F89F"
+        android:fontFamily="@font/baloo"
+        android:text="Guardar Nuevo Material"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom2"
+        app:layout_constraintVertical_bias="0.477" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
