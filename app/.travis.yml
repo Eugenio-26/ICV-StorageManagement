@@ -1,2 +1,2 @@
 language: android
-jdk: oraclejdk8
+jdk: jdk1.8.0_241
