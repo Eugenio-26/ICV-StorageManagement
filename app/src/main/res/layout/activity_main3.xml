@@ -8,7 +8,21 @@
     android:background="#153c27">
 
     <TextView
-        android:id="@+id/nom2"
+        android:id="@+id/Nom5"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/baloo"
+        android:text="Cantidad: "
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nom4" />
+
+    <TextView
+        android:id="@+id/Nom4"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:layout_marginStart="4dp"
@@ -22,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Nom3" />
 
     <EditText
-        android:id="@+id/tipMat"
+        android:id="@+id/ProMatET"
         android:layout_width="180dp"
         android:layout_height="65dp"
         android:layout_marginTop="15dp"
@@ -33,8 +47,23 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/nom2"
-        app:layout_constraintTop_toBottomOf="@+id/PreMat" />
+        app:layout_constraintStart_toEndOf="@+id/Nom4"
+        app:layout_constraintTop_toBottomOf="@+id/PreMatET" />
+
+    <EditText
+        android:id="@+id/CanMatET"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="#3CB371"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Inserte la Cantidad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Nom4"
+        app:layout_constraintTop_toBottomOf="@+id/ProMatET" />
 
     <TextView
         android:id="@+id/Nom2"
@@ -51,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Nom1" />
 
     <EditText
-        android:id="@+id/TipMat"
+        android:id="@+id/TipMatET"
         android:layout_width="180dp"
         android:layout_height="65dp"
         android:layout_marginTop="15dp"
@@ -63,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Nom1"
-        app:layout_constraintTop_toBottomOf="@+id/NomMat" />
+        app:layout_constraintTop_toBottomOf="@+id/NomMatET" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -109,7 +138,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Tutulo" />
 
     <EditText
-        android:id="@+id/NomMat"
+        android:id="@+id/NomMatET"
         android:layout_width="180dp"
         android:layout_height="65dp"
         android:layout_marginTop="115dp"
@@ -138,7 +167,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Nom2" />
 
     <EditText
-        android:id="@+id/PreMat"
+        android:id="@+id/PreMatET"
         android:layout_width="180dp"
         android:layout_height="65dp"
         android:layout_marginTop="15dp"
@@ -151,14 +180,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/Nom3"
-        app:layout_constraintTop_toBottomOf="@+id/TipMat" />
+        app:layout_constraintTop_toBottomOf="@+id/TipMatET" />
 
     <Button
         android:id="@+id/BotonGuardar"
         android:layout_width="250dp"
         android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:background="#58F89F"
         android:fontFamily="@font/baloo"
+        android:onClick="OnClick"
         android:text="Guardar Nuevo Material"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -166,8 +200,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom2"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintTop_toBottomOf="@+id/Nom5"
+        app:layout_constraintVertical_bias="0.541" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

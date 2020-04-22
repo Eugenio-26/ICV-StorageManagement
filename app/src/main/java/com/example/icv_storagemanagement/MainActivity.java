@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AdminSQLiteOpenHelper conn=new AdminSQLiteOpenHelper(this, "bd_materiales",null,1);
         Button botonincio = (Button) findViewById(R.id.IniciarSesionBoton);
         botonincio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 if (Usuario.equals("AdminPrueba") && Contraseña.equals("12345")) {
                     Intent nuevoform = new Intent(MainActivity.this, Main2Activity.class);
                     startActivity(nuevoform);
+
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Usuario Incorrecto", Toast.LENGTH_LONG).show();

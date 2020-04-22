@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#153c27"
+    tools:context=".entradas_salidas">
+
+    <EditText
+        android:id="@+id/etPreBus"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Precio de Material."
+        android:inputType="textPersonName"
+        android:textColor="#58F89F"
+        android:textColorHint="#356746"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etTipBus"
+        app:layout_constraintTop_toBottomOf="@+id/botBus" />
+
+    <Button
+        android:id="@+id/botAct"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:background="#58F89F"
+        android:fontFamily="@font/baloo"
+        android:text="Actualizar Datos del Material."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProBus" />
+
+    <EditText
+        android:id="@+id/etNomBus"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Nombre del Material."
+        android:inputType="textPersonName"
+        android:textColor="#58F89F"
+        android:textColorHint="#356746"
+        android:textColorLink="#FFFEFE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTipBus"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Tipo de Material."
+        android:inputType="textPersonName"
+        android:textColor="#58F89F"
+        android:textColorHint="#356746"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomBus" />
+
+    <Button
+        android:id="@+id/botBus"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#58F89F"
+        android:fontFamily="@font/baloo"
+        android:onClick="OnClick"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etNomBus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCanBus"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Cantidad del Material."
+        android:inputType="textPersonName"
+        android:textColor="#58F89F"
+        android:textColorHint="#356746"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etProBus"
+        app:layout_constraintTop_toBottomOf="@+id/etPreBus" />
+
+    <Button
+        android:id="@+id/botEli"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#F37070"
+        android:fontFamily="@font/baloo"
+        android:text="Eliminar Material."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botAct"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etProBus"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Proovedor del Material."
+        android:inputType="textPersonName"
+        android:textColor="#58F89F"
+        android:textColorHint="#356746"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTipBus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

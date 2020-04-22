@@ -16,6 +16,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        AdminSQLiteOpenHelper conn=new AdminSQLiteOpenHelper(this, "bd_materiales",null,1);
 
         BotonRNM = (Button)findViewById(R.id.B12);
         BotonES = (Button)findViewById(R.id.B22);
@@ -30,6 +31,22 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        BotonVI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Ventanainv = new Intent(Main2Activity.this, Main4Activity.class);
+                startActivity(Ventanainv);
+            }
+        });
+
+        BotonES.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent VentanaES = new Intent(Main2Activity.this, entradas_salidas.class);
+                startActivity(VentanaES);
+            }
+        });
+
         BotonSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,5 +54,6 @@ public class Main2Activity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
