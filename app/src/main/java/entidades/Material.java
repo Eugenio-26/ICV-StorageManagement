@@ -1,6 +1,6 @@
-package com.example.icv_storagemanagement.entidades;
+package entidades;
 
-public class Material{
+public class Material {
 
     private String nombreDeMaterial;
     private String tipoDeMaterial;

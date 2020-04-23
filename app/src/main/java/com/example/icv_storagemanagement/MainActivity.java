@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String Usuario = ((EditText) findViewById(R.id.ETUsuario)).getText().toString();
                 String Contraseña = ((EditText) findViewById(R.id.ETContraseña)).getText().toString();
-                if (Usuario.equals("AdminPrueba") && Contraseña.equals("12345")) {
+                if (Usuario.equals("Eugenio_Prueba") && Contraseña.equals("12345")) {
                     Intent nuevoform = new Intent(MainActivity.this, Main2Activity.class);
                     startActivity(nuevoform);
+
 
                 }
                 else {
@@ -34,4 +35,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

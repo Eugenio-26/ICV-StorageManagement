@@ -4,17 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main4Activity"
-    android:background="#153c27">
+    android:background="#FFFFFF"
+    tools:context=".Main4Activity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="59dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icv" />
 
     <TextView
         android:id="@+id/invTexto"
         android:layout_width="220dp"
         android:layout_height="63dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/baloo"
+        android:fontFamily="@font/hind_medium"
         android:text="Mi Inventario."
-        android:textColor="#58F89F"
+        android:textColor="#153c27"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/_dynamic"
         app:layout_constraintEnd_toEndOf="parent"

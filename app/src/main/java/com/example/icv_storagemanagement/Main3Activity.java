@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.icv_storagemanagement.utilidades.Utilidades;
+import utilidades.Utilidades;
 
 public class Main3Activity extends AppCompatActivity {
     EditText et1_nom, et2_tip, et3_pre, et4_pro, et5_can;

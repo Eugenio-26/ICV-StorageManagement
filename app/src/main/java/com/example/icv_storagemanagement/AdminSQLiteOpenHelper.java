@@ -3,8 +3,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-
-import com.example.icv_storagemanagement.utilidades.Utilidades;
+import utilidades.Utilidades;
 
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
