@@ -32,17 +32,34 @@ public class Main3Activity extends AppCompatActivity {
     private void registrar() {
         AdminSQLiteOpenHelper conn=new AdminSQLiteOpenHelper(this, "bd_materiales",null,1);
         SQLiteDatabase db=conn.getWritableDatabase();
-        ContentValues values=new ContentValues();
-        values.put(Utilidades.CAMPO_NOMBRE,et1_nom.getText().toString());
-        values.put(Utilidades.CAMPO_TIPO,et2_tip.getText().toString());
-        values.put(Utilidades.CAMPO_PRECIO,et3_pre.getText().toString());
-        values.put(Utilidades.CAMPO_PROVEEDOR,et4_pro.getText().toString());
-        values.put(Utilidades.CAMPO_CANTIDAD,et5_can.getText().toString());
+        String camNom = et1_nom.getText().toString();
+        String camTip = et2_tip.getText().toString();
+        String camPre = et3_pre.getText().toString();
+        String camPro = et4_pro.getText().toString();
+        String camCan = et5_can.getText().toString();
 
-        Long nombreResultante=db.insert(Utilidades.TABLA_MATERIALES,Utilidades.CAMPO_NOMBRE,values);
+        if(!camNom.isEmpty() && !camTip.isEmpty() && !camPre.isEmpty() && !camPro.isEmpty() && !camCan.isEmpty()){
+            ContentValues values=new ContentValues();
+            values.put(Utilidades.CAMPO_NOMBRE,camNom);
+            values.put(Utilidades.CAMPO_TIPO,camTip);
+            values.put(Utilidades.CAMPO_PRECIO,camPre);
+            values.put(Utilidades.CAMPO_PROVEEDOR,camPro);
+            values.put(Utilidades.CAMPO_CANTIDAD,camCan);
 
-        Toast.makeText(getApplicationContext(),"Material Registrado: "+nombreResultante,Toast.LENGTH_SHORT).show();
-        db.close();
+            Long nombreResultante=db.insert(Utilidades.TABLA_MATERIALES,Utilidades.CAMPO_NOMBRE,values);
+            Toast.makeText(getApplicationContext(),"Materiales Registrados: "+nombreResultante,Toast.LENGTH_SHORT).show();
+            db.close();
+
+            et1_nom.setText("");
+            et2_tip.setText("");
+            et3_pre.setText("");
+            et4_pro.setText("");
+            et5_can.setText("");
+        }else{
+Toast.makeText(this, "Es necesario llenar todos los campos",Toast.LENGTH_LONG).show();
+        }
+
+
 
     }
 

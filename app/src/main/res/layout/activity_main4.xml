@@ -24,7 +24,7 @@
         android:layout_height="63dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/hind_medium"
-        android:text="Mi Inventario."
+        android:text="@string/mi_inventario"
         android:textColor="#153c27"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/_dynamic"
